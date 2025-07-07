@@ -1,13 +1,18 @@
 @media only screen and (min-width: 38rem) {
 
-    header, main, nav, footer {
+    header,
+    main,
+    nav,
+    footer {
         max-width: 1200px;
         margin: 0 auto;
     }
+
     header {
         grid-template-columns: 24px auto;
-      
+
     }
+
     .hamburger {
         display: none;
     }
@@ -20,12 +25,12 @@
         padding-right: 0;
     }
 
-    .navigation ul{
+    .navigation ul {
         display: flex;
+    }
 
-        li {
-            flex: 1 1 auto;
-        }
+    .navigation ul li {
+        flex: 1 1 auto;
     }
 }
 
