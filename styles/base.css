@@ -167,6 +167,16 @@ nav.show {
     font-size: 1.2rem;
 }
 
+.course-card.completed {
+    background: #e6ffe6; /* light green */
+    border-color: #4caf50;
+}
+
+.course-card.incomplete {
+    background: #fff8e1; /* light yellow */
+    border-color: #ff9800;
+}
+
 /* ========================= FOOTER ============================= */
 footer {
     background-color: var(--primary-color);

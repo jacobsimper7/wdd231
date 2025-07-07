@@ -86,15 +86,29 @@ function clearCourses() {
 
 function displayCourses(courses) {
     clearCourses();
+    // Calculate total credits
+    const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+    // Display total credits
+    const creditTotal = document.getElementById('credit-total');
+    creditTotal.textContent = `Total number of course credits listed below: ${totalCredits}`;
+
     courses.forEach(course => {
         const card = document.createElement("section");
         card.classList.add("course-card");
+        card.classList.add(course.completed ? "completed" : "incomplete");
 
         const title = document.createElement('h3');
         title.textContent = `${course.subject} ${course.number}`;
 
-        card.appendChild(title);
+        if (course.completed) {
+            // Add checkmark
+            const check = document.createElement('span');
+            check.textContent = " ✔️";
+            check.setAttribute('aria-label', 'Completed');
+            title.appendChild(check);
+        }
 
+        card.appendChild(title);
         courseContainer.appendChild(card);
     });
 }
