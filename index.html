@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <title>WDD 231 | Jacob Simper</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1>Jacob Simper</h1>
+    <header>
+        <img src="images/logo.svg" alt="Cite Logo" width="100" height="100">
+        <span>Cite Title</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-menu" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="about-photo-container">
+            <section class="about-section">
+                <h2>About Me</h2>
+                <p>Hello, I'm Jacob Simper. I am from Tooele Utah but currently living in Peck Idaho (middle of nowhere
+                    northern Idaho). I have lived here for a little over a year. My family moved while I was serving my
+                    mission in South Carolina. I work in construction, helping build my grandparents home and figured I
+                    do pathways at the same time before I eventually go to BYU-I. I've been doing pathways for almost a
+                    year now and am one class away from finishing my first certificate of Web and Computer Programming.
+                    I decided that programming is fun, but I don't like web design very much, so my next certificate is
+                    going to be graphic design. I am the oldest of 5 with 2 brothers and 2 sisters. I love doing most
+                    anything outdoors especially hunting, hiking, running, and fishing. I spend a lot of time in my YSA
+                    branch, at least lots of driving since I live in the middle of nowhere. I also like listening to
+                    audio books, board games, volleyball, spike ball, and all that kind of thing too. </p>
+            </section>
+            <section class="photo-section">
+                <h2>Student Photo</h2>
+                <img src="images/profile_missionary.webp" alt="Jacob Simper Student Photo">
+            </section>
+        </div>
+
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <ul class="filter">
+                <li><a href="all">All</a></li>
+                <li><a href="cse">CSE</a></li>
+                <li><a href="wdd">WDD</a></li>
+            </ul>
+            <div id="course-list">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/jacob.simper/">
+                <img src="images/facebook.svg" alt="Facbook Logo" width="30" height="30">
+            </a>
+            <a href="www.linkedin.com/in/jacob-simper-603036317">
+                <img src="images/linkedin.svg" alt="Facbook Logo" width="30" height="30">
+            </a>
+            <a href="https://www.microsoft.com/en-us/microsoft-teams/log-in?msockid=164cb88cfabb6fd42b74add4fb016ee8">
+                <img src="images/microsoft-teams.svg" alt="Facbook Logo" width="30" height="30">
+            </a>
+            <a href="https://github.com/jacobsimper7?tab=overview&from=2025-07-01&to=2025-07-01">
+                <img src="images/github.svg" alt="Facbook Logo" width="30" height="30">
+            </a>
+        </div>
+        <p>
+            <span id="currentyear"></span>
+            ©2025 🐐 Jacob Simper 🐐 Idaho, US 🐐
+        </p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,52 @@
+@media only screen and (min-width: 38rem) {
+
+    header, main, nav, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 24px auto;
+      
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        position: static;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navigation ul{
+        display: flex;
+
+        li {
+            flex: 1 1 auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .about-photo-container {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .about-section {
+        flex: 2 1 0;
+        width: auto;
+    }
+
+    .photo-section {
+        flex: 1 1 0;
+        width: auto;
+    }
+
+    .photo-section img {
+        max-width: 120px;
+    }
+}

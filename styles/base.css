@@ -1,0 +1,275 @@
+/* ==================== Color Scheme =======================
+teal
+deep blue
+ */
+
+:root {
+    --primary-color: #008080;
+    /* Teal */
+    --secondary-color: #00008b;
+    /* Deep Blue */
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --link-color: #0066cc;
+}
+
+/* ==================== Main Site  ======================= */
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+main section {
+    margin-bottom: 2.5rem;
+}
+
+main h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+main img {
+    display: block;
+    max-width: 180px;
+    width: 100%;
+    border-radius: 12px;
+    margin: 1rem auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ==================== Header ======================= */
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 2px var(--secondary-color);
+    column-gap: 8px;
+
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* ==================== Hamburger Navigation ======================= */
+.hamburger {
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+    /* Unicode for '×' */
+    font-size: 2rem;
+}
+
+/* ==================== Navigation ======================= */
+.navigation {
+    display: none;
+    position: relative;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+nav.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    margin: 10px 0;
+}
+
+.navigation ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navigation ul li a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.current {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* ========================= Web Certificate Courses ============================= */
+#course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.course-card {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    text-align: center;
+}
+
+.course-card h3 {
+    margin: 0;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+/* ========================= FOOTER ============================= */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 18px 0 10px 0;
+    margin-top: 2rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 7px;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--primary-color);
+    color: white;
+    border: #979797 solid 1px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social a img {
+    width: 24px;
+    height: 24px;
+}
+
+.social a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* ========================= FILTER ============================= */
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+.filter li {
+    list-style: none;
+}
+
+.filter a {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.filter a:hover,
+.filter .current a {
+    background: var(--secondary-color);
+}
+
+/* === About Me and Photo Side-by-Side === */
+.about-photo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+    margin-bottom: 2.5rem;
+}
+
+.about-section {
+    width: 100%;
+}
+
+.photo-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-section img {
+    max-width: 180px;
+    width: 100%;
+    border-radius: 12px;
+    margin: 0.5rem 0 0 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 700px) {
+    .about-photo-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .photo-section img {
+        max-width: 180px;
+    }
+}
