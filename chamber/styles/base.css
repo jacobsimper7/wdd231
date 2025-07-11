@@ -1,0 +1,109 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #50e3c2;
+    --text-color: #333;
+    --background-color: #f5f5f5;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* ==================== Hamburger Navigation ======================= */
+.hamburger {
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::after {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/* ==================== Navigation ======================= */
+.navigation {
+    display: none;
+    position: relative;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+nav.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    margin: 10px 0;
+}
+
+.navigation ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navigation ul li a:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.current {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+
+/* ========================= FOOTER ============================= */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 18px 0 10px 0;
+    margin-top: 2rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 7px;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--primary-color);
+    border: #979797 solid 1px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.social a img {
+    width: 24px;
+    height: 24px;
+}
+
+.social a:hover {
+    background-color: var(--secondary-color);
+}
