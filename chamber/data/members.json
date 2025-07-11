@@ -1,83 +1,81 @@
-[
-    {
-        "members": [
-            {
-                "name": "Whoville Widgets",
-                "address": "1 Horton Lane, Whoville, Seussland",
-                "phone": "555-123-0001",
-                "website": "https://whovillewidgets.com",
-                "image": "whoville_widgets.png",
-                "membershipLevel": 3,
-                "description": "Makers of fantastical widgets for every Who and what.",
-                "contact": "Cindy Lou Who",
-                "email": "info@whovillewidgets.com"
-            },
-            {
-                "name": "Grinchy Gadgets",
-                "address": "13 Mount Crumpit Rd, Whoville, Seussland",
-                "phone": "555-123-0002",
-                "website": "https://grinchygadgets.com",
-                "image": "grinchy_gadgets.png",
-                "membershipLevel": 2,
-                "description": "Gadgets for sneaky schemes and holiday fun.",
-                "contact": "Mr. Grinch",
-                "email": "grinch@grinchygadgets.com"
-            },
-            {
-                "name": "Lorax Lumber Co.",
-                "address": "42 Truffula Tree Ave, Seuss Forest",
-                "phone": "555-123-0003",
-                "website": "https://loraxlumber.com",
-                "image": "lorax_lumber.png",
-                "membershipLevel": 1,
-                "description": "Sustainable wood products, we speak for the trees.",
-                "contact": "The Lorax",
-                "email": "hello@loraxlumber.com"
-            },
-            {
-                "name": "Cat in the Hat Cleaning",
-                "address": "222 Hat Trick St, Seussville",
-                "phone": "555-123-0004",
-                "website": "https://catinthehatcleaning.com",
-                "image": "cat_hat_cleaning.png",
-                "membershipLevel": 2,
-                "description": "Cleaning up messes, big and small, with a smile and a hat.",
-                "contact": "The Cat",
-                "email": "cat@catinthehatcleaning.com"
-            },
-            {
-                "name": "Green Eggs & Ham Café",
-                "address": "7 Sam-I-Am Blvd, Seussburg",
-                "phone": "555-123-0005",
-                "website": "https://greeneggsandhamcafe.com",
-                "image": "green_eggs_ham_cafe.png",
-                "membershipLevel": 3,
-                "description": "Serving green eggs, ham, and Seussical treats all day.",
-                "contact": "Sam-I-Am",
-                "email": "sam@greeneggsandhamcafe.com"
-            },
-            {
-                "name": "Sneetch Beach Rentals",
-                "address": "99 Star-On Ave, Sneetch Beach",
-                "phone": "555-123-0006",
-                "website": "https://sneetchbeachrentals.com",
-                "image": "sneetch_beach_rentals.png",
-                "membershipLevel": 1,
-                "description": "Beach fun for star-bellied and plain-bellied Sneetches alike.",
-                "contact": "Sylvester McMonkey McBean",
-                "email": "info@sneetchbeachrentals.com"
-            },
-            {
-                "name": "Yertle's Turtle Towers",
-                "address": "1 Pondside Stack, Sala-ma-Sond",
-                "phone": "555-123-0007",
-                "website": "https://yertlesturtletowers.com",
-                "image": "yertle_turtle_towers.png",
-                "membershipLevel": 2,
-                "description": "Luxury turtle towers with a view for every shell.",
-                "contact": "King Yertle",
-                "email": "king@yertlesturtletowers.com"
-            }
-        ]
-    }
-]
+{
+    "members": [
+        {
+            "name": "Whoville Widgets",
+            "address": "1 Horton Lane, Whoville, Seussland",
+            "phone": "555-123-0001",
+            "website": "https://whovillewidgets.com",
+            "image": "whoville_widgets.png",
+            "membershipLevel": 3,
+            "description": "Makers of fantastical widgets for every Who and what.",
+            "contact": "Cindy Lou Who",
+            "email": "info@whovillewidgets.com"
+        },
+        {
+            "name": "Grinchy Gadgets",
+            "address": "13 Mount Crumpit Rd, Whoville, Seussland",
+            "phone": "555-123-0002",
+            "website": "https://grinchygadgets.com",
+            "image": "grinchy_gadgets.png",
+            "membershipLevel": 2,
+            "description": "Gadgets for sneaky schemes and holiday fun.",
+            "contact": "Mr. Grinch",
+            "email": "grinch@grinchygadgets.com"
+        },
+        {
+            "name": "Lorax Lumber Co.",
+            "address": "42 Truffula Tree Ave, Seuss Forest",
+            "phone": "555-123-0003",
+            "website": "https://loraxlumber.com",
+            "image": "lorax_lumber.png",
+            "membershipLevel": 1,
+            "description": "Sustainable wood products, we speak for the trees.",
+            "contact": "The Lorax",
+            "email": "hello@loraxlumber.com"
+        },
+        {
+            "name": "Cat in the Hat Cleaning",
+            "address": "222 Hat Trick St, Seussville",
+            "phone": "555-123-0004",
+            "website": "https://catinthehatcleaning.com",
+            "image": "cat_hat_cleaning.png",
+            "membershipLevel": 2,
+            "description": "Cleaning up messes, big and small, with a smile and a hat.",
+            "contact": "The Cat",
+            "email": "cat@catinthehatcleaning.com"
+        },
+        {
+            "name": "Green Eggs & Ham Café",
+            "address": "7 Sam-I-Am Blvd, Seussburg",
+            "phone": "555-123-0005",
+            "website": "https://greeneggsandhamcafe.com",
+            "image": "green_eggs_ham_cafe.png",
+            "membershipLevel": 3,
+            "description": "Serving green eggs, ham, and Seussical treats all day.",
+            "contact": "Sam-I-Am",
+            "email": "sam@greeneggsandhamcafe.com"
+        },
+        {
+            "name": "Sneetch Beach Rentals",
+            "address": "99 Star-On Ave, Sneetch Beach",
+            "phone": "555-123-0006",
+            "website": "https://sneetchbeachrentals.com",
+            "image": "sneetch_beach_rentals.png",
+            "membershipLevel": 1,
+            "description": "Beach fun for star-bellied and plain-bellied Sneetches alike.",
+            "contact": "Sylvester McMonkey McBean",
+            "email": "info@sneetchbeachrentals.com"
+        },
+        {
+            "name": "Yertle's Turtle Towers",
+            "address": "1 Pondside Stack, Sala-ma-Sond",
+            "phone": "555-123-0007",
+            "website": "https://yertlesturtletowers.com",
+            "image": "yertle_turtle_towers.png",
+            "membershipLevel": 2,
+            "description": "Luxury turtle towers with a view for every shell.",
+            "contact": "King Yertle",
+            "email": "king@yertlesturtletowers.com"
+        }
+    ]
+}
