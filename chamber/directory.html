@@ -19,6 +19,7 @@
 
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/members.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
@@ -40,32 +41,12 @@
         </ul>
     </nav>
     <main>
-        <h1>Directory</h1>
-        <div id="cards">
+        <h1>Business Directory</h1>
+        <div class="view-toggle">
             <button id="grid">Grid</button>
             <button id="list">List</button>
         </div>
-        <!-- <div class="about-photo-container">
-            <section class="about-section">
-                <h2>Events</h2>
-                <p>Random info on upcoming events</p>
-            </section>
-            <section class="photo-section">
-                <h2>Student Photo</h2>
-                <img src="images/profile_missionary.webp" alt="Jacob Simper's Photo">
-            </section>
-        </div>
-
-        <section>
-            <h2>Web Certificate Courses</h2>
-            <ul class="filter">
-                <li><a href="all">All</a></li>
-                <li><a href="cse">CSE</a></li>
-                <li><a href="wdd">WDD</a></li>
-            </ul>
-            <p id="credit-total"></p>
-            <div id="course-list"></div>
-        </section> -->
+        <div id="directory"></div>
     </main>
     <footer>
 
@@ -87,6 +68,7 @@
             ©2025 Whoville Chamber of Commerce
         </p>
         <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
