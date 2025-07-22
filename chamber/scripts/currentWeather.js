@@ -5,8 +5,8 @@ const forecastCaption = document.querySelector('#forecast');
 
 
 const apiKeyCW = 'f86c94d1180c0e84c5d5db7b1849c7c3';
-const latCW = '11.286062632088056';
-const lonCW = '5.943241567946729'; 
+const latCW = '29.425486188890435';
+const lonCW = '-98.4769616295801'; 
 const urlCW = `https://api.openweathermap.org/data/2.5/weather?lat=${latCW}&lon=${lonCW}&appid=${apiKeyCW}&units=imperial`;
 
 async function apiFetchCW() {

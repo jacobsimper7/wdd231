@@ -50,4 +50,14 @@
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         gap: 1.5rem;
     }
+
+        .hero {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+    }
+    .hero img {
+        width: 100%;
+        max-width: 400px;
+    }
 }
