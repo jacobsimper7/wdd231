@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whoville Chamber Directory | WDD 231 | Jacob Simper</title>
+    <title>Whoville Chamber Home | WDD 231 | Jacob Simper</title>
     <meta name="description"
         content="This is a Chamber of Commerce website for the made up place of whoville. It includes a directory of businesses, a contact form, and a list of services provided by the chamber.">
     <meta name="author" content="Jacob A. Simper">
-    <meta property="og:title" content="Chamber Directory | WDD 231 | Jacob Simper">
+    <meta property="og:title" content="Chamber Home | WDD 231 | Jacob Simper">
     <meta property="og:description"
         content="This is a Chamber of Commerce website for the made up place of whoville. It includes a directory of businesses, a contact form, and a list of services provided by the chamber.">
     <meta property="og:image" content="images/site_image.png">
@@ -16,7 +16,8 @@
 
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/currentWeather.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
@@ -31,21 +32,54 @@
     </header>
     <nav id="nav-menu" class="navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="#">Directory</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Business Directory</h1>
-        <div class="view-toggle">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <div id="directory">
+        <section class="hero">
+            <div>
+                <h1>Welcome to the Whoville Chamber of Commerce</h1>
+                <p>Connecting Whoville's businesses and community.</p>
+            </div>
+            <img src="images/heroimage.jpg" alt="whoville hero image" width="600" height="400">
+            <div>
+                <a href="join.html">
+                    <h2>Join us Today!</h2>
+                </a>
+            </div>
 
-        </div>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul id="event-list">
+                <!-- Event items will be dynamically inserted here -->
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <p>Temperature: <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption id="currentWeather"></figcaption>
+            </figure>
+            <h2>Weather Forecast</h2>
+            <figure>
+                <figcaption id="forecast"></figcaption>
+            </figure>
+        </section>
+
+        <section class="spotlights">
+            <h2>Company Spotlights</h2>
+            <div id="member-list">
+                <!-- Member items will be dynamically inserted here -->
+            </div>
+        </section>
+
     </main>
     <footer>
         <section>
