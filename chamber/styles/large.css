@@ -60,4 +60,13 @@
         width: 100%;
         max-width: 400px;
     }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 4vw;
+    }
+    header img {
+        margin-bottom: 0.5rem;
+    }
 }

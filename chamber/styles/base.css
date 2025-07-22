@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #50e3c2;
-    --text-color: #333;
-    --background-color: #f5f5f5;
+    --primary-color: #1a237e;        /* Deep blue for strong contrast */
+    --secondary-color: #00bfae;      /* Bright teal for accent */
+    --text-color: #181818;           /* Almost black for best readability */
+    --background-color: #f9f9f9;     /* Very light gray for subtle contrast */
     --font-family: 'Arial', sans-serif;
 }
 
@@ -13,7 +13,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
     padding: 20px 2vw;
     margin-bottom: 2rem;
     border-radius: 12px 12px 0 0;
@@ -27,14 +27,17 @@ header h1 {
 }
 
 header h1 a {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 header img {
     width: 60px;
     height: 60px;
     margin-right: 1rem;
-    padding: 0;
+    padding: 0.3rem;
+    background-color: var(--secondary-color); /* Added background */
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
 }
 
 header span {
@@ -44,35 +47,32 @@ header span {
     text-align: left;
 }
 
-@media (max-width: 700px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 16px 4vw;
-    }
-    header img {
-        margin-bottom: 0.5rem;
-    }
-}
 
 /* ==================== Hamburger Navigation ======================= */
 .hamburger {
     width: 44px;
     height: 44px;
-    background-color: transparent;
+    background-color: var(--secondary-color); /* Changed from transparent */
     border: none;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
 }
 
 .hamburger::after {
     content: "\2630";
     font-size: 2rem;
+    color: #fff; /* White icon for contrast */
 }
 
 .hamburger.show::after {
     content: "\00D7";
     font-size: 2rem;
+    color: #fff;
 }
 
 /* ==================== Navigation ======================= */
@@ -82,7 +82,7 @@ header span {
     left: 0;
     width: 100%;
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
 }
 
 nav.show {
@@ -108,14 +108,10 @@ nav.show {
     font-size: 1.2rem;
 }
 
-.navigation ul li a:hover {
-    background-color: var(--secondary-color);
-    color: white;
-}
-
+.navigation ul li a:hover,
 .current {
     background-color: var(--secondary-color);
-    color: white;
+    color: #181818;
 }
 
 /* ==================== Main Content ======================= */
@@ -145,7 +141,7 @@ main {
     gap: 0.3rem;
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: var(--background-color);
+    background-color: #fff;
     border-radius: 8px;    
 }
 
@@ -154,7 +150,7 @@ main {
     min-width: 0;
     text-align: left;
     font-size: 1rem;
-    color: #333;
+    color: var(--text-color);
     flex: unset;
     word-break: break-word;
 }
@@ -168,15 +164,15 @@ main {
 
 .list a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
 .list:nth-child(even) {
-    background-color: #eaf6ff;
+    background-color: #e3eafc;
 }
 .list:nth-child(odd) {
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
 }
 
 .grid {
@@ -197,7 +193,7 @@ main {
     flex-direction: column;
     align-items: center;
     transition: box-shadow 0.2s, transform 0.2s;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #cfd8dc;
 }
 
 .grid section:hover {
@@ -217,7 +213,7 @@ main {
 
 .grid p {
     margin: 0.3rem 0;
-    color: #333;
+    color: var(--text-color);
     font-size: 1rem;
     text-align: center;
     word-break: break-word;
@@ -230,14 +226,14 @@ main {
 }
 
 .grid a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-decoration: underline;
     word-break: break-all;
     transition: color 0.2s;
 }
 
 .grid a:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 /* Directory View Toggle Buttons */
@@ -266,7 +262,7 @@ main {
 #grid:hover, #list:hover,
 #grid.active, #list.active {
     background: var(--secondary-color);
-    color: #fff;
+    color: #181818;
 }
 
 
@@ -274,7 +270,7 @@ main {
 /* ========================= FOOTER ============================= */
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 18px 0 10px 0;
     margin-top: 2rem;
@@ -312,6 +308,19 @@ footer p {
 
 .social a:hover {
     background-color: var(--secondary-color);
+}
+
+/* --- Mailto Links in Footer --- */
+footer a[href^="mailto:"] {
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+footer a[href^="mailto:"]:hover {  
+    color: #fff;
+    text-decoration: underline solid;
 }
 
 /* -------------------------------- Hero Section -------------------------------------------- */
@@ -356,9 +365,17 @@ footer p {
     margin: 0 auto;
 }
 
+.call-to-action {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(74, 144, 226, 0.07);
+}
+
 /* --- Events Section --- */
 .events {
-    background: #f5f5f5;
+    background: #e3eafc;
     border-radius: 12px;
     box-shadow: 0 1px 4px rgba(74, 144, 226, 0.07);
     padding: 1.5rem 1rem;
@@ -375,7 +392,7 @@ footer p {
 }
 .events li {
     margin-bottom: 0.5rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* --- Weather Section --- */
@@ -407,12 +424,12 @@ footer p {
 }
 .weather figcaption {
     font-size: 1.1rem;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* --- Spotlights Section --- */
 .spotlights {
-    background: #f5f5f5;
+    background: #e3eafc;
     border-radius: 12px;
     box-shadow: 0 1px 4px rgba(74, 144, 226, 0.07);
     padding: 1.5rem 1rem;
@@ -436,7 +453,7 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #cfd8dc;
 }
 .spotlight-member img {
     width: 60px;
@@ -454,7 +471,7 @@ footer p {
 }
 .spotlight-member p {
     margin: 0.2rem 0;
-    color: #333;
+    color: var(--text-color);
     font-size: 1rem;
     text-align: center;
     word-break: break-word;
