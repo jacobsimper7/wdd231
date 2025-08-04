@@ -19,11 +19,18 @@ function displayItems(data) {
     data.forEach(x => {
         console.log(x);
         const photo = document.createElement('img');
-        photo.src = `${url}${x.path};`
+        photo.src = `${url}${x.path}`;
         photo.alt = x.name
 
+        photo.addEventListener('click', () => showStuff(x));
         showHere.appendChild(photo);
     });
 }
 
 displayItems(temples);
+
+function showStuff(x) {
+    mytitle.innerHTML = x.name;
+    myinfo.innerHTML = `Dedicated: ${x.dedicated} <br> President: ${x.person} ${x.number}`;
+    mydialog.showModal();
+}

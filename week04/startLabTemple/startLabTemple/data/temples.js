@@ -209,6 +209,13 @@ export const temples = [
         "dedicated": "October, 1984",
         "person": "Gordon B. Hinckley",
         "path": "dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
+    },
+    {
+        "number": "59",
+        "name": "Spokane Washington Temple",
+        "dedicated": "August, 1999",
+        "person": "Gordon B. Hinckley",
+        "path": "spokane-washington/320x200/spokane-washington-temple-1279173-wallpaper.jpg"
     }
 ]
 

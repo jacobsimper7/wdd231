@@ -93,7 +93,8 @@ function displayCourses(courses) {
     creditTotal.textContent = `Total number of course credits listed below: ${totalCredits}`;
 
     courses.forEach(course => {
-        const card = document.createElement("section");
+        const card = document.createElement("button");
+        card.addEventListener("click", () => displayCourseDetails(course));
         card.classList.add("course-card");
         card.classList.add(course.completed ? "completed" : "incomplete");
 
@@ -129,3 +130,22 @@ document.querySelectorAll('.filter a').forEach(link => {
     });
 }
 );
+
+function displayCourseDetails(course) {
+    const courseDetails = document.getElementById('course-details');
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById('closeModal');
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}

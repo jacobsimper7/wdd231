@@ -1,2 +1,150 @@
-*{box-sizing: border-box;}
+/* --- General Reset & Layout --- */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fa;
+    color: #222;
+}
+header {
+    background: #1a237e;
+    color: #fff;
+    padding: 1.2rem 2vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+nav {
+    background: #00bfae;
+    padding: 0.5rem 0;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.3em 0.8em;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+nav a:hover {
+    background: #1a237e;
+    color: #fff;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+h1 {
+    color: #1a237e;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+#showHere {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+#showHere img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(74,144,226,0.09);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+#showHere img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 24px rgba(74,144,226,0.18);
+}
+
+/* --- Modal Dialog Styling --- */
+dialog#mydialog {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(26,35,126,0.18);
+    padding: 0;
+    max-width: 350px;
+    width: 90vw;
+    background: #fff;
+    animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95);}
+    to { opacity: 1; transform: scale(1);}
+}
+dialog#mydialog > div {
+    background: #1a237e;
+    color: #fff;
+    padding: 1rem 1.2rem 0.7rem 1.2rem;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+dialog#mydialog h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+dialog#mydialog button {
+    background: #00bfae;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+dialog#mydialog button:hover {
+    background: #009e8e;
+}
+dialog#mydialog p {
+    padding: 1.2rem;
+    margin: 0;
+    color: #222;
+    font-size: 1rem;
+    background: #f4f7fa;
+    border-radius: 0 0 16px 16px;
+    text-align: center;
+}
+
+/* --- Footer --- */
+footer {
+    background: #1a237e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+    #showHere {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    dialog#mydialog {
+        max-width: 98vw;
+    }
+}
 
