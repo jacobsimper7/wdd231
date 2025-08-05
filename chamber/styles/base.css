@@ -477,3 +477,115 @@ footer a[href^="mailto:"]:hover {
     word-break: break-word;
 }
 
+/* --------------------------------Form Styling on Join Page------------------------ */
+form {
+    margin: 1rem 2%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(74, 144, 226, 0.07);
+    padding: 2rem 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+form h3 {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin: 1.5rem 0 .5rem 0;
+    border-bottom: 1px solid #e3eafc;
+    padding-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select,
+form textarea {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .5rem;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    border-left-width: 5px;
+    border-left-color: var(--secondary-color);
+    font-size: 1rem;
+    color: var(--text-color);
+    width: 100%;
+    max-width: 350px;
+    font-family: inherit;
+    background: #f9f9f9;
+    transition: border-left-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(74, 144, 226, 0.04);
+}
+
+form input:required,
+form textarea:required {
+    border-left-color: #d70000;
+}
+form input:focus,
+form textarea:focus {
+    border-left-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.09);
+}
+form input:required:valid,
+form textarea:required:valid {
+    border-left-color: green;
+}
+
+form input[type=radio] {
+    margin-right: 0.5em;
+    accent-color: var(--secondary-color);
+}
+
+form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(74, 144, 226, 0.07);
+    transition: background 0.2s, color 0.2s;
+}
+
+form input[type=submit]:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Responsive form */
+@media (max-width: 600px) {
+    form {
+        padding: 1rem 0.5rem;
+        max-width: 100%;
+    }
+    form input[type=text],
+    form input[type=tel],
+    form input[type=date],
+    form input[type=email],
+    form select,
+    form textarea {
+        max-width: 100%;
+    }
+}

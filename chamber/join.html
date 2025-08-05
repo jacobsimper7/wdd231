@@ -32,14 +32,44 @@
     </header>
     <nav id="nav-menu" class="navigation">
         <ul>
-            <li class="current"><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li class="current"><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
-        
+        <form method="GET" action="thanks.html" class="designOne">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                    title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                    title="Your Last Name"></label>
+            <label>Organizational Title
+                <input type="text" name="orgtitle" required autocomplete="organization-title"
+                    title="Only letters, hyphens, and spaces. Minimum 7 characters." pattern="^[A-Za-z\- ]{7,}$">
+            </label>
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                    autocomplete="email"></label>
+            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                    placeholder="987-555-1234"></label>
+            <label>Business/Organization's Name <input type="text" name="organization" required autocomplete="organization"
+                    title="organization"></label>
+
+
+
+            <h3>Membership Level</h3>
+            <label><input type="radio" name="membership" value="np" checked>Non Profit</label>
+            <label><input type="radio" name="membership" value="bronze">Bronze</label>
+            <label><input type="radio" name="membership" value="silver">Silver</label>
+            <label><input type="radio" name="membership" value="gold">Gold</label>
+            
+            <label for="description">Business/Organization Description</label>
+            <textarea id="description" name="description" title="Describe your business or organization" rows="4" required></textarea>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Join the Chamber">
+        </form>
     </main>
     <footer>
         <section>
