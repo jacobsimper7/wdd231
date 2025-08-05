@@ -16,8 +16,7 @@
 
     <script src="scripts/last-modified.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/currentweather.js" defer></script>
+    <script src="scripts/membershipModals.js" defer></script>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
@@ -39,37 +38,115 @@
         </ul>
     </nav>
     <main>
-        <form method="GET" action="thanks.html" class="designOne">
-            <label>First Name <input type="text" name="first" required autocomplete="given-name"
-                    title="Your First Name"></label>
-            <label>Last Name <input type="text" name="last" required autocomplete="family-name"
-                    title="Your Last Name"></label>
-            <label>Organizational Title
-                <input type="text" name="orgtitle" required autocomplete="organization-title"
-                    title="Only letters, hyphens, and spaces. Minimum 7 characters." pattern="^[A-Za-z\- ]{7,}$">
-            </label>
-            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
-                    autocomplete="email"></label>
-            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
-                    placeholder="987-555-1234"></label>
-            <label>Business/Organization's Name <input type="text" name="organization" required autocomplete="organization"
-                    title="organization"></label>
+        <div class="join-layout">
+            <form method="GET" action="thanks.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label>Organizational Title
+                    <input type="text" name="orgtitle" required autocomplete="organization-title"
+                        title="Only letters, hyphens, and spaces. Minimum 7 characters." pattern="^[A-Za-z\- ]{7,}$">
+                </label>
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                        placeholder="987-555-1234"></label>
+                <label>Business/Organization's Name <input type="text" name="organization" required
+                        autocomplete="organization" title="organization"></label>
 
 
 
-            <h3>Membership Level</h3>
-            <label><input type="radio" name="membership" value="np" checked>Non Profit</label>
-            <label><input type="radio" name="membership" value="bronze">Bronze</label>
-            <label><input type="radio" name="membership" value="silver">Silver</label>
-            <label><input type="radio" name="membership" value="gold">Gold</label>
-            
-            <label for="description">Business/Organization Description</label>
-            <textarea id="description" name="description" title="Describe your business or organization" rows="4" required></textarea>
+                <h3>Membership Level</h3>
+                <label><input type="radio" name="membership" value="np" checked>Non Profit</label>
+                <label><input type="radio" name="membership" value="bronze">Bronze</label>
+                <label><input type="radio" name="membership" value="silver">Silver</label>
+                <label><input type="radio" name="membership" value="gold">Gold</label>
 
-            <input type="hidden" name="timestamp" id="timestamp">
+                <label for="description">Business/Organization Description</label>
+                <textarea id="description" name="description" title="Describe your business or organization" rows="4"
+                    required></textarea>
 
-            <input type="submit" value="Join the Chamber">
-        </form>
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Join the Chamber">
+            </form>
+
+            <section class="membership-cards">
+                <div class="membership-card">
+                    <h4>Non Profit</h4>
+                    <a href="#" class="info-link" data-modal="modal-np">Learn More</a>
+                </div>
+                <div class="membership-card">
+                    <h4>Bronze</h4>
+                    <a href="#" class="info-link" data-modal="modal-bronze">Learn More</a>
+                </div>
+                <div class="membership-card">
+                    <h4>Silver</h4>
+                    <a href="#" class="info-link" data-modal="modal-silver">Learn More</a>
+                </div>
+                <div class="membership-card">
+                    <h4>Gold</h4>
+                    <a href="#" class="info-link" data-modal="modal-gold">Learn More</a>
+                </div>
+            </section>
+        </div>
+
+        <div>
+            <dialog id="modal-np">
+                <div>
+                    <h2>Non Profit Membership</h2>
+                    <button class="close-modal" aria-label="Close">&times;</button>
+                </div>
+                <ul>
+                    <li>Lowest cost membership</li>
+                    <li>Access to community events</li>
+                    <li>Free training workshops</li>
+                    <li>Event participation discounts</li>
+                    <li>Networking with local organizations</li>
+                </ul>
+            </dialog>
+            <dialog id="modal-bronze">
+                <div>
+                    <h2>Bronze Membership</h2>
+                    <button class="close-modal" aria-label="Close">&times;</button>
+                </div>
+                <ul>
+                    <li>All Non Profit benefits</li>
+                    <li>Business listing in directory</li>
+                    <li>Quarterly advertising opportunities</li>
+                    <li>Discounts on select events</li>
+                    <li>Access to member-only training</li>
+                </ul>
+            </dialog>
+            <dialog id="modal-silver">
+                <div>
+                    <h2>Silver Membership</h2>
+                    <button class="close-modal" aria-label="Close">&times;</button>
+                </div>
+                <ul>
+                    <li>All Bronze benefits</li>
+                    <li>Spotlight positions on home page</li>
+                    <li>Priority event registration</li>
+                    <li>Free business promotion at select events</li>
+                    <li>Invitations to exclusive networking events</li>
+                </ul>
+            </dialog>
+            <dialog id="modal-gold">
+                <div>
+                    <h2>Gold Membership</h2>
+                    <button class="close-modal" aria-label="Close">&times;</button>
+                </div>
+                <ul>
+                    <li>All Silver benefits</li>
+                    <li>Premium advertising placement</li>
+                    <li>VIP access to all chamber events</li>
+                    <li>Personalized business consulting</li>
+                    <li>Annual recognition at gala dinner</li>
+                </ul>
+            </dialog>
+        </div>
+
     </main>
     <footer>
         <section>

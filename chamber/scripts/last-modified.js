@@ -7,3 +7,10 @@ lastModified.innerHTML = `Last Modified: <span class="highlight">${new Intl.Date
      dateStyle: "full"
     }
 ).format(oLastModif)}</span>`;
+
+document.addEventListener("DOMContentLoaded", () => {
+    const ts = document.getElementById("timestamp");
+    if (ts) {
+      ts.value = new Date().toISOString();
+    }
+  });
