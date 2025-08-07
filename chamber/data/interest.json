@@ -1,0 +1,52 @@
+{
+    "interest": [
+        {
+            "name": "Truffula Tree Grove",
+            "description": "Wander among the colorful, fluffy Truffula trees and learn about their importance to the environment.",
+            "address": "42 Truffula Tree Ave, Seuss Forest",
+            "image": "images/truffula_tree_grove.svg"
+        },
+        {
+            "name": "Mount Crumpit Overlook",
+            "description": "Hike to the top for a panoramic view of Whoville and maybe spot the Grinch’s cave!",
+            "address": "13 Mount Crumpit Rd, Whoville",
+            "image": "images/mt_crumpit.svg"
+        },
+        {
+            "name": "Green Eggs & Ham Café",
+            "description": "Enjoy a quirky meal at Sam-I-Am’s famous eatery, serving green eggs and ham all day.",
+            "address": "7 Sam-I-Am Blvd, Seussburg",
+            "image": "images/cafe.svg"
+        },
+        {
+            "name": "Sneetch Beach",
+            "description": "Relax on the sandy shores where star-bellied and plain-bellied Sneetches play together.",
+            "address": "99 Star-On Ave, Sneetch Beach",
+            "image": "images/beach.svg"
+        },
+        {
+            "name": "Horton’s Listening Post",
+            "description": "Visit the spot where Horton heard a Who—great for photos and learning about kindness.",
+            "address": "1 Horton Lane, Whoville",
+            "image": "images/listening-post.svg"
+        },
+        {
+            "name": "Lorax’s Environmental Center",
+            "description": "Interactive exhibits about caring for the earth, hosted by the Lorax himself.",
+            "address": "42 Truffula Tree Ave, Seuss Forest",
+            "image": "images/loraxs-environmental-center.svg"
+        },
+        {
+            "name": "Cat in the Hat Playground",
+            "description": "A whimsical playground with giant hats, slides, and Thing 1 & Thing 2 games.",
+            "address": "222 Hat Trick St, Seussville",
+            "image": "images/playground.svg"
+        },
+        {
+            "name": "Yertle’s Turtle Tower",
+            "description": "Climb the stack and see the world from Yertle’s point of view—just don’t topple the turtles!",
+            "address": "1 Pondside Stack, Sala-ma-Sond",
+            "image": "images/tower.svg"
+        }
+    ]
+}

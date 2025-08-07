@@ -70,3 +70,13 @@
         margin-bottom: 0.5rem;
     }
 }
+
+@media (min-width: 700px) {
+  .interest-img:hover {
+    transform: scale(1.08) rotate(-3deg);
+    box-shadow: 0 8px 32px rgba(0,191,174,0.18);
+    transition: transform 0.2s, box-shadow 0.2s;
+    filter: brightness(1.1) drop-shadow(0 0 8px var(--secondary-color));
+    cursor: pointer;
+  }
+}
