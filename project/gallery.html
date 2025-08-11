@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DPrintBros.com</title>
+    <meta name="description"
+        content="Explore our gallery of stunning 3D printed designs and creations. Get inspired by our fidgets, temple models, and custom projects.">
+    
+    <meta property="og:title" content="Creative 3D Printing | Custom Designs & Rapid Prototyping">
+    <meta property="og:description"
+        content="Creative 3D offers custom 3D printing services, rapid prototyping, and unique creations. Start your next project with us and bring your ideas to life!">
+    <meta property="og:image" content="images/home-page-screenshot.png">
+    <meta property="og:url" content="https://jacobsimper7.github.io/wdd231/project/gallery.html">
+
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <script type="module" src="scripts/gallery.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">Creative 3D</div>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="services.html" class="cta">Start Printing</a>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h1>Discover Stunning 3D Prints</h1>
+        <p>Explore our latest designs and creations!</p>
+
+        <div class="gallery-filters">
+            <button type="button" data-filter="all" class="active">All</button>
+            <button type="button" data-filter="fidget">Fidgets</button>
+            <button type="button" data-filter="temple">Temples</button>
+            <!-- Add more buttons as needed -->
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <span id="currentyear"></span>
+            🐐 Jacob Simper 🐐 Idaho, US 🐐
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+{
+    "products": [
+        {
+            "title": "3D Printed Fidget Sword",
+            "img": "images/fidget-sword.webp",
+            "alt": "Fidget Sword",
+            "link": "https://www.thingiverse.com/thing:6563222",
+            "category": "fidget",
+            "author": "3DDotDragon",
+            "author-link": "https://www.thingiverse.com/3DDotDragon",
+            "license": "Creative Commons - Attribution license",
+            "price": 8
+        },
+        {
+            "title": "Infinity Cube",
+            "img": "images/infinity-cube.webp",
+            "alt": "3D Printed Infinity Cube",
+            "link": "https://www.thingiverse.com/thing:4997903",
+            "category": "fidget",
+            "author": "mjdargen",
+            "author-link": "https://www.thingiverse.com/mjdargen",
+            "license": "Creative Commons - Attribution license",
+            "price": 10
+        },
+        {
+            "title": "3D Printed Quad Star Fidget Toy",
+            "img": "images/quad-star-fidget.webp",
+            "alt": "3D Printed Quad Star Fidget Toy",
+            "link": "https://www.thingiverse.com/thing:4804260",
+            "category": "fidget",
+            "author": "HexNuts",
+            "author-link": "https://www.thingiverse.com/HexNuts",
+            "license": "Creative Commons - Attribution license",
+            "price": 7
+        },
+        {
+            "title": "3D Printed Fidget Spinner",
+            "img": "images/fidget-spinner.webp",
+            "alt": "3D Printed Fidget Spinner",
+            "link": "https://www.thingiverse.com/thing:1794875",
+            "category": "fidget",
+            "author": "Keshyden",
+            "author-link": "https://www.thingiverse.com/Keshyden",
+            "license": "Creative Commons - Attribution license",
+            "price": 9
+        },
+        {
+            "title": "Articulated Snake",
+            "img": "images/articulated-snake.webp",
+            "alt": "3D Printed Articulated Snake",
+            "link": "https://www.thingiverse.com/thing:7058952",
+            "category": "fidget",
+            "author": "Print_that_thing",
+            "author-link": "https://www.thingiverse.com/Print_that_thing",
+            "license": "Creative Commons - Attribution license",
+            "price": 12
+        },
+        {
+            "title": "SLC Temple Napkin Holder",
+            "img": "images/temple-napkin-holder.webp",
+            "alt": "SLC Temple napkin holder",
+            "link": "https://www.thingiverse.com/thing:2014525",
+            "category": "temple",
+            "author": "fffrune",
+            "author-link": "https://www.thingiverse.com/fffrune",
+            "license": "Creative Commons - Attribution license",
+            "price": 18
+        },
+        {
+            "title": "Golden Plates Tissue Box",
+            "img": "images/golden-plates-tissue-box.webp",
+            "alt": "3D Printed Golden Plates Tissue Box",
+            "link": "https://www.thingiverse.com/thing:3234616",
+            "category": "temple",
+            "author": "Gregawal",
+            "author-link": "https://www.thingiverse.com/Gregawal",
+            "license": "Creative Commons - Attribution license",
+            "price": 22
+        },
+        {
+            "title": "Tie Clips for Church",
+            "img": "images/tie-clips.webp",
+            "alt": "Tie Clips for Church",
+            "link": "https://www.thingiverse.com/thing:5937224",
+            "category": "temple",
+            "author": "McFuddy",
+            "author-link": "https://www.thingiverse.com/McFuddy",
+            "license": "Creative Commons - Attribution license",
+            "price": 5
+        },
+        {
+            "title": "3D Printed Salt Lake Temple",
+            "img": "images/salt-lake-temple.webp",
+            "alt": "3D Printed Salt Lake Temple",
+            "link": "https://www.thingiverse.com/thing:729743",
+            "category": "temple",
+            "author": "barrand",
+            "author-link": "https://www.thingiverse.com/barrand",
+            "license": "Creative Commons - Attribution license",
+            "price": 25
+        },
+        {
+            "title": "197 LDS Temples",
+            "img": "images/temples.webp",
+            "alt": "3D Printed 197 LDS Temples",
+            "link": "https://www.thingiverse.com/thing:3585875",
+            "category": "temple",
+            "author": "hylman",
+            "author-link": "https://www.thingiverse.com/hlyman",
+            "license": "Creative Commons - Attribution - Non-Commercial",
+            "price": 18
+        },
+        {
+            "title": "Infinite Torture Cube v2",
+            "img": "images/infinity-torcher-cube.webp",
+            "alt": "3D Printed Infinite Torture Cube v2",
+            "link": "https://www.thingiverse.com/thing:3574874",
+            "category": "fidget",
+            "author": "z0333",
+            "author-link": "https://www.thingiverse.com/z0333",
+            "license": "Creative Commons - Attribution",
+            "price": 7
+        },
+        {
+            "title": "Hexagon Illusion Toy",
+            "img": "images/hexagon.jpg",
+            "alt": "Hexagon Illusion Toy",
+            "link": "https://www.thingiverse.com/thing:6807391",
+            "category": "fidget",
+            "author": "Vizide",
+            "author-link": "https://www.thingiverse.com/Vizide",
+            "license": "Creative Commons - Attribution",
+            "price": 10
+        },
+        {
+            "title": "Cute Octopus - version 3",
+            "img": "images/cute-octo.jpg",
+            "alt": "Cute Octopus",
+            "link": "https://www.thingiverse.com/thing:6898235",
+            "category": "fidget",
+            "author": "Davis_County_Library",
+            "author-link": "https://www.thingiverse.com/Davis_County_Library",
+            "license": "Creative Commons - Attribution",
+            "price": 11
+        },
+        {
+            "title": "Sphere (Planetary) Gears",
+            "img": "images/sphere-gears.webp",
+            "alt": "Sphere (Planetary) Gears",
+            "link": "https://www.thingiverse.com/thing:6992557",
+            "category": "fidget",
+            "author": "kpoddubny",
+            "author-link": "https://www.thingiverse.com/kpoddubny",
+            "license": "Creative Commons - Attribution - Share Alike license",
+            "price": 7
+        },
+        {
+            "title": "Galaxy Fidget",
+            "img": "images/galaxy-fidget.webp",
+            "alt": "Galaxy Fidget",
+            "link": "https://www.thingiverse.com/thing:7107428",
+            "category": "fidget",
+            "author": "MoDErahN",
+            "author-link": "https://www.thingiverse.com/MoDErahN",
+            "license": "Creative Commons - Attribution - Share Alike license",
+            "price": 8
+        }
+    ]
+}
