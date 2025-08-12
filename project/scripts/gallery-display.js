@@ -10,7 +10,7 @@ export function displayGallery(items, gridSelector = '#galleryGrid') {
     div.innerHTML = `
       <a href="javascript:void(0)">
         <img src="${item.img}" alt="${item.alt}" loading="lazy">
-        <div class="overlay"><p>${item.name}</p></div>
+        <div class="overlay"><p>${item.title}</p></div>
       </a>
     `;
     grid.appendChild(div);

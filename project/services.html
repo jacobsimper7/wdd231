@@ -22,9 +22,7 @@
         href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/services.js" defer></script>
-    <script src="scripts/last-modified.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/services.js" defer></script>
 </head>
 
 <body>
@@ -45,7 +43,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <a href="home.html#quote-form" class="cta">Get a Quote</a>
+        <a href="index.html#quote-form" class="cta">Get a Quote</a>
     </header>
     <main>
         <!------------------------------------------Services Section --------------------------->
@@ -93,7 +91,7 @@
             <h2>Request a Custom Creation</h2>
             <p>Fill out the form below to start your custom 3D printing project. We’ll get back to you with a quote and
                 details!</p>
-            <form class="order-form">
+            <form method="get" action="thanks.html" class="order-form">
                 <fieldset>
                     <label for="orderName">Your Name*</label>
                     <input type="text" id="orderName" name="orderName" required>
@@ -130,7 +128,7 @@
             </form>
         </section>
 
-        <section class="services-main">
+        <section class="services-layout">
             <!-- -------------------------------Testimonials Section--------------------------------- -->
 
             <section class="testimonials">

@@ -25,4 +25,20 @@
         max-width: 100%;
         margin: 0 auto;
     }
+
+    .services-layout,
+    .services-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: stretch;
+        padding: 0 0.5rem;
+    }
+
+    .service-card,
+    .service-info,
+    form {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
