@@ -41,4 +41,16 @@
         max-width: 100%;
         margin: 0 auto;
     }
+
+    h1 {
+        font-size: 2.2rem; /* or whatever size fits your design */
+        /* You can also add font-family, font-weight, etc. */
+    }
+
+    section h1,
+    article h1,
+    aside h1,
+    nav h1 {
+      font-size: 2.2rem;
+    }
 }
