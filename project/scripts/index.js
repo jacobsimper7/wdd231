@@ -7,7 +7,7 @@ document.getElementById("exploreBtn").addEventListener("click", () => {
   window.location.href = "gallery.html";
 });
 
-setupNavigation();
+document.addEventListener("DOMContentLoaded", setupNavigation);
 updateLastModified();
 populateColorOptions();
 populateMaterialOptions();

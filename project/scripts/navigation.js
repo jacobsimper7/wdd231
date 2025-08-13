@@ -1,7 +1,6 @@
 export function setupNavigation() {
-  document.addEventListener("DOMContentLoaded", () => {
-    const hamBtn = document.getElementById("ham-btn");
-    const nav = document.querySelector("header nav");
+  const hamBtn = document.getElementById("ham-btn");
+  const nav = document.querySelector("nav");
 
   if (hamBtn && nav) {
     hamBtn.addEventListener("click", (e) => {
@@ -20,5 +19,4 @@ export function setupNavigation() {
       }
     });
   }
-});
 }
