@@ -29,7 +29,6 @@ header {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1px;
-    border-radius: 0 0 12px 12px;
     position: relative;
 }
 
@@ -911,8 +910,11 @@ h2 {
 
 /* Desktop nav */
 @media (min-width: 701px) {
-    .hamburger {
-        display: none;
+    nav {
+        background: var(--primary-color);
+        box-shadow: 0 2px 12px rgba(0,201,255,0.07);
+        border-radius: 0 0 12px 12px;
+        margin-bottom: 1rem;
     }
     nav ul {
         display: flex !important;
@@ -924,6 +926,55 @@ h2 {
     }
     nav ul li {
         margin: 0 1rem;
+    }
+    nav a {
+        color: var(--primary-color);
+        background: transparent;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 0.4em 1em;
+        border-radius: 6px;
+        transition: background 0.2s, color 0.2s;
+    }
+    nav a:hover,
+    nav a:focus {
+        background: var(--secondary-color);
+        color: #fff;
+    }
+    nav a.active {
+        background: var(--secondary-color);
+        color: #fff;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(255,64,129,0.08);
+    }
+}
+
+/* Mobile nav */
+@media (max-width: 700px) {
+    nav {
+        background: var(--primary-color, #00C9FF);
+        box-shadow: 0 2px 12px rgba(0,201,255,0.07);
+    }
+    nav ul {
+        background: var(--primary-color, #00C9FF);
+    }
+    nav a {
+        color: #fff;
+        background: transparent;
+        font-size: 1rem;
+        padding: 0.7em 1em;
+        border-radius: 6px;
+        transition: background 0.2s, color 0.2s;
+    }
+    nav a:hover,
+    nav a:focus {
+        background: var(--secondary-color);
+        color: #fff;
+    }
+    nav a.active {
+        background: #fff;
+        color: var(--primary-color);
+        font-weight: bold;
     }
 }
 
