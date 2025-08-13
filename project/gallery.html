@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3DPrintBros.com</title>
+    <meta author="Jacob Simper">
     <meta name="description"
         content="Explore our gallery of stunning 3D printed designs and creations. Get inspired by our fidgets, temple models, and custom projects.">
-    
+
     <meta property="og:title" content="Creative 3D Printing | Custom Designs & Rapid Prototyping">
     <meta property="og:description"
         content="Creative 3D offers custom 3D printing services, rapid prototyping, and unique creations. Start your next project with us and bring your ideas to life!">
@@ -26,8 +27,6 @@
 </head>
 
 <body>
-
-    <!-- Navigation -->
     <header>
         <div class="logo">Creative 3D</div>
         <button id="ham-btn" class="hamburger" aria-label="Open navigation">
@@ -35,32 +34,34 @@
             <span></span>
             <span></span>
         </button>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+
         <a href="services.html" class="cta">Start Printing</a>
     </header>
 
-    <!-- Gallery Section -->
-    <section class="gallery">
-        <h1>Discover Stunning 3D Prints</h1>
-        <p>Explore our latest designs and creations!</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        <div class="gallery-filters">
-            <button type="button" data-filter="all" class="active">All</button>
-            <button type="button" data-filter="fidget">Fidgets</button>
-            <button type="button" data-filter="temple">Temples</button>
-            <!-- Add more buttons as needed -->
-        </div>
-        <div class="gallery-grid" id="galleryGrid"></div>
-    </section>
+    <main>
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h1>Discover Stunning 3D Prints</h1>
+            <p>Explore our latest designs and creations!</p>
 
-    <!-- Footer -->
+            <div class="gallery-filters">
+                <button type="button" data-filter="all" class="active">All</button>
+                <button type="button" data-filter="fidget">Fidgets</button>
+                <button type="button" data-filter="temple">Temples</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </section>
+    </main>
+
     <footer>
         <p>
             <span id="currentyear"></span>
